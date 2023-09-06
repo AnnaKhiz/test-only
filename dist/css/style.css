@@ -79,7 +79,7 @@ body {
   transition: all 0.5s ease-in-out;
   -webkit-transition: all 0.5s ease-in-out;
 }
-.main__btn span:first-of-type {
+.main__btn span > div {
   cursor: pointer;
 }
 .main__btn.seafront {
