@@ -1,0 +1,73 @@
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+body
+	font-family: Arial, sans-serif
+	font-size: 14px
+.main
+	width: 100vw
+	height: 100vh
+	overflow: hidden
+	background: #020F20
+	img
+		width: 100%
+		height: 100%
+		opacity: 0.4
+		object-fit: cover
+	&__btn
+		position: absolute
+		padding: 11px 15px
+		display: inline-block
+		width: fit-content
+		border-radius: 40px
+		border: 1px solid #6ABF4B
+		font: 400 normal 1rem/1.14rem 'Arial, sans-serif'
+		color: white
+		&.green
+			background-color: #6ABF4B
+			opacity: 0.7
+			&.opacity
+				opacity: 1
+		&.blue
+			background-color: #3877EE
+			opacity: 0.7
+			&.opacity
+				opacity: 1
+		&-name
+			margin-left: 15px
+		& span
+			&.hidden
+				display: none
+			&.show
+				display: inline-block
+		&.seafront
+			top: 648px
+			left: 446px
+		&.hotel-1
+			top: 719px
+			left: 1103px
+		&.stadium
+			top: 433px
+			left: 687px
+		&.stadium-2
+			top: 552px
+			left: 1081px
+		&.store
+			top: 329px
+			left: 1148px
+		&.hotel-2
+			top: 210px
+			left: 580px
+		&.hospital
+			top: 597px
+			left: 1306px
+		&.maternity
+			top: 643px
+			left: 1593px
+		&.museum
+			top: 399px
+			left: 1414px
+		&.building
+			top: 150px
+			left: 1373px
