@@ -8,9 +8,13 @@ export const showName = () => {
             nextElem.classList.toggle('show');
 
             if (nextElem.classList.contains('show')) {
-                curElem.innerText = '-'
+                curElem.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="10" height="2" viewBox="0 0 10 2" fill="none">\n` +
+                                     `<path  d="M0 1H10" stroke="white" stroke-width="2"/>\n` +
+                                    `</svg>`;
             } else {
-                curElem.innerText = '+'
+                curElem.innerHTML = `<svg class="plus" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">\n` +
+                                      `<path d="M20 15V25M15 20H25" stroke="white" stroke-width="2"/>\n` +
+                                    `</svg>`;
             }
         }
     })

@@ -13,7 +13,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background: #020F20;
+  background-color: #020F20;
 }
 .main img {
   width: 100%;
@@ -24,12 +24,20 @@ body {
 .main__btn {
   position: absolute;
   padding: 11px 15px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   width: fit-content;
   border-radius: 40px;
   border: 1px solid #6ABF4B;
   font: 400 normal 1rem/1.14rem "Arial, sans-serif";
   color: white;
+}
+.main__btn svg {
+  vertical-align: middle;
+  pointer-events: none;
+}
+.main__btn svg.plus {
+  margin: -11px -15px;
 }
 .main__btn.green {
   background-color: #6ABF4B;
@@ -55,42 +63,325 @@ body {
   display: inline-block;
 }
 .main__btn.seafront {
-  top: 648px;
-  left: 446px;
+  top: 70%;
+  left: 23%;
+}
+@media screen and (max-width: 1750px) {
+  .main__btn.seafront {
+    top: 68%;
+  }
+}
+@media screen and (max-width: 1650px) {
+  .main__btn.seafront {
+    top: 67%;
+  }
+}
+@media screen and (max-width: 1550px) {
+  .main__btn.seafront {
+    top: 66%;
+    left: 22%;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .main__btn.seafront {
+    left: 20%;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .main__btn.seafront {
+    left: 19%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .main__btn.seafront {
+    left: 18%;
+  }
 }
 .main__btn.hotel-1 {
-  top: 719px;
-  left: 1103px;
+  top: 79%;
+  left: 58%;
+}
+@media screen and (max-width: 1850px) {
+  .main__btn.hotel-1 {
+    top: 78%;
+  }
+}
+@media screen and (max-width: 1680px) {
+  .main__btn.hotel-1 {
+    top: 77%;
+  }
+}
+@media screen and (max-width: 1630px) {
+  .main__btn.hotel-1 {
+    top: 76%;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .main__btn.hotel-1 {
+    top: 75%;
+  }
+}
+@media screen and (max-width: 1370px) {
+  .main__btn.hotel-1 {
+    left: 59%;
+  }
 }
 .main__btn.stadium {
-  top: 433px;
-  left: 687px;
+  top: 45%;
+  left: 37%;
+}
+@media screen and (max-width: 1540px) {
+  .main__btn.stadium {
+    left: 36%;
+  }
+}
+@media screen and (max-width: 1470px) {
+  .main__btn.stadium {
+    left: 35%;
+  }
+}
+@media screen and (max-width: 1380px) {
+  .main__btn.stadium {
+    left: 34%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .main__btn.stadium {
+    left: 33%;
+  }
 }
 .main__btn.stadium-2 {
-  top: 552px;
-  left: 1081px;
+  top: 59%;
+  left: 56%;
+}
+@media screen and (max-width: 1680px) {
+  .main__btn.stadium-2 {
+    top: 58%;
+  }
+}
+@media screen and (max-width: 1580px) {
+  .main__btn.stadium-2 {
+    top: 57%;
+  }
+}
+@media screen and (max-width: 1410px) {
+  .main__btn.stadium-2 {
+    left: 57%;
+  }
 }
 .main__btn.store {
-  top: 329px;
-  left: 1148px;
+  top: 35%;
+  left: 60%;
+}
+@media screen and (max-width: 1720px) {
+  .main__btn.store {
+    top: 36%;
+  }
+}
+@media screen and (max-width: 1560px) {
+  .main__btn.store {
+    top: 37%;
+  }
+}
+@media screen and (max-width: 1460px) {
+  .main__btn.store {
+    left: 61%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .main__btn.store {
+    left: 62%;
+  }
 }
 .main__btn.hotel-2 {
-  top: 210px;
-  left: 580px;
+  top: 22%;
+  left: 30%;
+}
+@media screen and (max-width: 1860px) {
+  .main__btn.hotel-2 {
+    top: 23%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .main__btn.hotel-2 {
+    top: 25%;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .main__btn.hotel-2 {
+    top: 26%;
+  }
+}
+@media screen and (max-width: 1580px) {
+  .main__btn.hotel-2 {
+    top: 27%;
+    left: 29%;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .main__btn.hotel-2 {
+    left: 28%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .main__btn.hotel-2 {
+    left: 27%;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .main__btn.hotel-2 {
+    left: 26%;
+  }
 }
 .main__btn.hospital {
-  top: 597px;
-  left: 1306px;
+  top: 64%;
+  left: 68%;
+}
+@media screen and (max-width: 1720px) {
+  .main__btn.hospital {
+    top: 63%;
+  }
+}
+@media screen and (max-width: 1570px) {
+  .main__btn.hospital {
+    top: 62%;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .main__btn.hospital {
+    left: 69%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .main__btn.hospital {
+    left: 70%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .main__btn.hospital {
+    left: 71%;
+  }
 }
 .main__btn.maternity {
-  top: 643px;
-  left: 1593px;
+  top: 69%;
+  left: 83%;
+}
+@media screen and (max-width: 1760px) {
+  .main__btn.maternity {
+    top: 68%;
+  }
+}
+@media screen and (max-width: 1640px) {
+  .main__btn.maternity {
+    top: 67%;
+  }
+}
+@media screen and (max-width: 1540px) {
+  .main__btn.maternity {
+    top: 66%;
+  }
+}
+@media screen and (max-width: 1520px) {
+  .main__btn.maternity {
+    left: 84%;
+  }
+}
+@media screen and (max-width: 1470px) {
+  .main__btn.maternity {
+    left: 85%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main__btn.maternity {
+    left: 86%;
+  }
+}
+@media screen and (max-width: 1390px) {
+  .main__btn.maternity {
+    left: 87%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .main__btn.maternity {
+    left: 88%;
+  }
+}
+@media screen and (max-width: 1310px) {
+  .main__btn.maternity {
+    left: 90%;
+  }
 }
 .main__btn.museum {
-  top: 399px;
-  left: 1414px;
+  top: 43%;
+  left: 74%;
+}
+@media screen and (max-width: 1500px) {
+  .main__btn.museum {
+    left: 75%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main__btn.museum {
+    left: 76%;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .main__btn.museum {
+    left: 77%;
+  }
+}
+@media screen and (max-width: 1340px) {
+  .main__btn.museum {
+    left: 78%;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .main__btn.museum {
+    left: 79%;
+  }
 }
 .main__btn.building {
-  top: 150px;
-  left: 1373px;
+  top: 16%;
+  left: 71%;
+}
+@media screen and (max-width: 1780px) {
+  .main__btn.building {
+    top: 17%;
+  }
+}
+@media screen and (max-width: 1780px) {
+  .main__btn.building {
+    top: 18%;
+  }
+}
+@media screen and (max-width: 1630px) {
+  .main__btn.building {
+    top: 19%;
+  }
+}
+@media screen and (max-width: 1530px) {
+  .main__btn.building {
+    top: 20%;
+    left: 72%;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .main__btn.building {
+    left: 73%;
+  }
+}
+@media screen and (max-width: 1390px) {
+  .main__btn.building {
+    left: 74%;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .main__btn.building {
+    left: 75%;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .main__btn.building {
+    left: 76%;
+  }
 }

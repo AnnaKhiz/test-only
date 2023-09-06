@@ -9,7 +9,7 @@ body
 	width: 100vw
 	height: 100vh
 	overflow: hidden
-	background: #020F20
+	background-color: #020F20
 	img
 		width: 100%
 		height: 100%
@@ -18,12 +18,18 @@ body
 	&__btn
 		position: absolute
 		padding: 11px 15px
-		display: inline-block
+		display: flex
+		align-items: center
 		width: fit-content
 		border-radius: 40px
 		border: 1px solid #6ABF4B
 		font: 400 normal 1rem/1.14rem 'Arial, sans-serif'
 		color: white
+		& svg
+			vertical-align: middle
+			pointer-events: none
+			&.plus
+				margin: -11px -15px
 		&.green
 			background-color: #6ABF4B
 			opacity: 0.7
@@ -42,32 +48,147 @@ body
 			&.show
 				display: inline-block
 		&.seafront
-			top: 648px
-			left: 446px
+			top: 70%
+			left: 23%
+			@media screen and (max-width: 1750px)
+				top: 68%
+			@media screen and (max-width: 1650px)
+				top: 67%
+			@media screen and (max-width: 1550px)
+				top: 66%
+				left: 22%
+			@media screen and (max-width: 1460px)
+				left: 20%
+			@media screen and (max-width: 1370px)
+				left: 19%
+			@media screen and (max-width: 1300px)
+				left: 18%
 		&.hotel-1
-			top: 719px
-			left: 1103px
+			top: 79%
+			left: 58%
+			@media screen and (max-width: 1850px)
+				top: 78%
+			@media screen and (max-width: 1680px)
+				top: 77%
+			@media screen and (max-width: 1630px)
+				top: 76%
+			@media screen and (max-width: 1530px)
+				top: 75%
+			@media screen and (max-width: 1370px)
+				left: 59%
 		&.stadium
-			top: 433px
-			left: 687px
+			top: 45%
+			left: 37%
+			@media screen and (max-width: 1540px)
+				left: 36%
+			@media screen and (max-width: 1470px)
+				left: 35%
+			@media screen and (max-width: 1380px)
+				left: 34%
+			@media screen and (max-width: 1300px)
+				left: 33%
 		&.stadium-2
-			top: 552px
-			left: 1081px
+			top: 59%
+			left: 56%
+			@media screen and (max-width: 1680px)
+				top: 58%
+			@media screen and (max-width: 1580px)
+				top: 57%
+			@media screen and (max-width: 1410px)
+				left: 57%
 		&.store
-			top: 329px
-			left: 1148px
+			top: 35%
+			left: 60%
+			@media screen and (max-width: 1720px)
+				top: 36%
+			@media screen and (max-width: 1560px)
+				top: 37%
+			@media screen and (max-width: 1460px)
+				left: 61%
+			@media screen and (max-width: 1330px)
+				left: 62%
 		&.hotel-2
-			top: 210px
-			left: 580px
+			top: 22%
+			left: 30%
+			@media screen and (max-width: 1860px)
+				top: 23%
+			@media screen and (max-width: 1800px)
+				top: 25%
+			@media screen and (max-width: 1700px)
+				top: 26%
+			@media screen and (max-width: 1580px)
+				top: 27%
+				left: 29%
+			@media screen and (max-width: 1480px)
+				left: 28%
+			@media screen and (max-width: 1400px)
+				left: 27%
+			@media screen and (max-width: 1330px)
+				left: 26%
 		&.hospital
-			top: 597px
-			left: 1306px
+			top: 64%
+			left: 68%
+			@media screen and (max-width: 1720px)
+				top: 63%
+			@media screen and (max-width: 1570px)
+				top: 62%
+			@media screen and (max-width: 1480px)
+				left: 69%
+			@media screen and (max-width: 1400px)
+				left: 70%
+			@media screen and (max-width: 1300px)
+				left: 71%
 		&.maternity
-			top: 643px
-			left: 1593px
+			top: 69%
+			left: 83%
+			@media screen and (max-width: 1760px)
+				top: 68%
+			@media screen and (max-width: 1640px)
+				top: 67%
+			@media screen and (max-width: 1540px)
+				top: 66%
+			@media screen and (max-width: 1520px)
+				left: 84%
+			@media screen and (max-width: 1470px)
+				left: 85%
+			@media screen and (max-width: 1440px)
+				left: 86%
+			@media screen and (max-width: 1390px)
+				left: 87%
+			@media screen and (max-width: 1350px)
+				left: 88%
+			@media screen and (max-width: 1310px)
+				left: 90%
 		&.museum
-			top: 399px
-			left: 1414px
+			top: 43%
+			left: 74%
+			@media screen and (max-width: 1500px)
+				left: 75%
+			@media screen and (max-width: 1440px)
+				left: 76%
+			@media screen and (max-width: 1400px)
+				left: 77%
+			@media screen and (max-width: 1340px)
+				left: 78%
+			@media screen and (max-width: 1300px)
+				left: 79%
 		&.building
-			top: 150px
-			left: 1373px
+			top: 16%
+			left: 71%
+			@media screen and (max-width: 1780px)
+				top: 17%
+			@media screen and (max-width: 1780px)
+				top: 18%
+			@media screen and (max-width: 1630px)
+				top: 19%
+			@media screen and (max-width: 1530px)
+				top: 20%
+				left: 72%
+			@media screen and (max-width: 1440px)
+				left: 73%
+			@media screen and (max-width: 1390px)
+				left: 74%
+			@media screen and (max-width: 1350px)
+				left: 75%
+			@media screen and (max-width: 1290px)
+				left: 76%
